@@ -19,9 +19,16 @@ function gcfNR(n1, n2) {
     return n1;
 }
 
+function lcm(n1, n2) {
+    return n1 * n2 / gcf(n1, n2);
+}
+
 let ans = gcf(30, 12);
 let ansNR = gcfNR(30, 12);
+let ansLcm = lcm(30,12);
+
 console.log(ans);
 console.log(ansNR);
+console.log(ansLcm);
 
 
